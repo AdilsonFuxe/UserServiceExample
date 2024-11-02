@@ -44,5 +44,52 @@ public class UserServiceTest {
         assertEquals(firstName, user.getFirstName());
         assertEquals(lastName, user.getLastName());
         assertEquals(email, user.getEmail());
+        Mockito.verify(usersRepository, Mockito.times(1)).save(Mockito.any(User.class));
+    }
+
+    @DisplayName("Empty last name causes correct exception")
+    @Test
+    void testCreateUser_WhenFirstNameIsEmpty_throwsIllegalException() {
+        // Arrange
+        String firstName = "";
+        String expectedExceptionMessage = "User's first name is empty";
+
+        // Act & Assert
+
+        IllegalArgumentException thrown = assertThrows(IllegalArgumentException.class, () -> {
+            userService.createUser(firstName, lastName, email, password, repeatedPassword);
+        });
+
+        // Assert
+        assertEquals(expectedExceptionMessage, thrown.getMessage());
+    }
+
+    @DisplayName("Empty last name causes correct exception")
+    @Test
+    void testCreateUser_WhenLastNameIsEmpty_throwsIllegalException() {
+        // Arrange
+        String lastName = "";
+        String expectedExceptionMessage = "User's last name is empty";
+
+        // Act & Assert
+
+        IllegalArgumentException thrown = assertThrows(IllegalArgumentException.class, () -> {
+            userService.createUser(firstName, lastName, email, password, repeatedPassword);
+        });
+
+        // Assert
+        assertEquals(expectedExceptionMessage, thrown.getMessage());
+    }
+
+    @DisplayName("If save() method causes RuntimeException, a UserException is thrown")
+    @Test
+    void testCreateUser_whenSaveMethodThrowsException_thenThrowsUserServiceException() {
+        Mockito.when(usersRepository.save(Mockito.any(User.class))).thenThrow(RuntimeException.class);
+
+        assertThrows(UserServiceException.class, () -> {
+            userService.createUser(firstName, lastName, email, password, repeatedPassword);
+        });
+
+        // assertEquals("Error saving user", thrown.getMessage());
     }
 }
