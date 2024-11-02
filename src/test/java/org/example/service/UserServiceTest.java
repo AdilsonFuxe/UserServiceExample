@@ -20,6 +20,8 @@ public class UserServiceTest {
     UserServiceImpl userService;
     @Mock
     UsersRepository usersRepository;
+    @Mock
+    EmailVerificationService emailVerificationService;
     String firstName;
     String lastName;
     String email;
@@ -91,5 +93,16 @@ public class UserServiceTest {
         });
 
         // assertEquals("Error saving user", thrown.getMessage());
+    }
+
+    @DisplayName("EmailNotificationException is handled")
+    @Test
+    void testCreateUser_whenEmailNotificationExceptionThrow_throwsUserServiceException() {
+        Mockito.when(usersRepository.save(Mockito.any(User.class))).thenReturn(true);
+        Mockito.doThrow(EmailNotificationServiceException.class).when(emailVerificationService).scheduleEmailConfirmation(Mockito.any(User.class));
+        assertThrows(UserServiceException.class, () -> {
+            userService.createUser(firstName, lastName, email, password, repeatedPassword);
+        });
+        Mockito.verify(emailVerificationService, Mockito.times(1)).scheduleEmailConfirmation(Mockito.any(User.class));
     }
 }

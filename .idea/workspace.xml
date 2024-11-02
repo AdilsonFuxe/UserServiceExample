@@ -12,11 +12,14 @@
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/data/UsersRepository.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/data/UsersRepositoryImpl.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/EmailNotificationServiceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/EmailVerificationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/EmailVerificationServiceImpl.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/UserService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/UserServiceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/service/UserServiceTest.java" afterDir="false" />
     </list>
@@ -52,6 +55,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/Adilson.Fuxe/www/bancobai/java/CalculatorMavem",
@@ -71,12 +75,15 @@
       <recent name="org.example.service" />
       <recent name="org.example.data" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.example.service" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example.service" />
       <recent name="org.example.model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest.testCreateUser_whenSaveMethodThrowsException_thenThrowsUserServiceException">
+  <component name="RunManager" selected="JUnit.UserServiceTest.testCreateUser_whenEmailNotificationExceptionThrow_throwsUserServiceException">
     <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UserService" />
       <extension name="coverage">
@@ -124,7 +131,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.testCreateUser_WhenUserDetailsProvided_returnsUserObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserServiceTest.testCreateUser_whenEmailNotificationExceptionThrow_throwsUserServiceException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UserService" />
       <extension name="coverage">
         <pattern>
@@ -134,7 +141,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.service" />
       <option name="MAIN_CLASS_NAME" value="org.example.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="testCreateUser_WhenUserDetailsProvided_returnsUserObject" />
+      <option name="METHOD_NAME" value="testCreateUser_whenEmailNotificationExceptionThrow_throwsUserServiceException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -158,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserServiceTest.testCreateUser_whenEmailNotificationExceptionThrow_throwsUserServiceException" />
         <item itemvalue="JUnit.UserServiceTest.testCreateUser_whenSaveMethodThrowsException_thenThrowsUserServiceException" />
         <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="JUnit.UserServiceTest.testCreateUser_WhenFirstNameIsEmpty_throwsIllegalException" />
         <item itemvalue="JUnit.UserServiceTest.testCreateUser_WhenLastNameIsEmpty_throwsIllegalException" />
-        <item itemvalue="JUnit.UserServiceTest.testCreateUser_WhenUserDetailsProvided_returnsUserObject" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +181,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730559411313</updated>
-      <workItem from="1730559412590" duration="4093000" />
+      <workItem from="1730559412590" duration="5825000" />
     </task>
     <servers />
   </component>
