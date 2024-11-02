@@ -83,7 +83,7 @@
       <recent name="org.example.model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest.testCreateUser_whenEmailNotificationExceptionThrow_throwsUserServiceException">
+  <component name="RunManager" selected="JUnit.UserServiceTest.testCreateUser_whenEmailNotificationExceptionThrow_throwsUserServiceException (1)">
     <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UserService" />
       <extension name="coverage">
@@ -92,9 +92,23 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <option name="PACKAGE_NAME" value="org.example.service" />
       <option name="MAIN_CLASS_NAME" value="org.example.service.UserServiceTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea -Xshare:off" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -115,7 +129,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.testCreateUser_WhenLastNameIsEmpty_throwsIllegalException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserServiceTest.testCreateUser_whenEmailNotificationExceptionThrow_throwsUserServiceException (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UserService" />
       <extension name="coverage">
         <pattern>
@@ -125,7 +139,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.service" />
       <option name="MAIN_CLASS_NAME" value="org.example.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="testCreateUser_WhenLastNameIsEmpty_throwsIllegalException" />
+      <option name="METHOD_NAME" value="testCreateUser_whenEmailNotificationExceptionThrow_throwsUserServiceException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,10 +153,48 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
       <option name="PACKAGE_NAME" value="org.example.service" />
       <option name="MAIN_CLASS_NAME" value="org.example.service.UserServiceTest" />
       <option name="METHOD_NAME" value="testCreateUser_whenEmailNotificationExceptionThrow_throwsUserServiceException" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-Xshare:off" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.testCreateUser_whenEmailNotificationExceptionThrow_throwsUserServiceException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UserService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.service" />
+      <option name="MAIN_CLASS_NAME" value="org.example.service.UserServiceTest" />
+      <option name="METHOD_NAME" value="testCreateUser_whenEmailNotificationExceptionThrow_throwsUserServiceException" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea -Xshare:off" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -165,11 +217,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserServiceTest.testCreateUser_whenEmailNotificationExceptionThrow_throwsUserServiceException (1)" />
+        <item itemvalue="JUnit.UserServiceTest.testCreateUser_whenEmailNotificationExceptionThrow_throwsUserServiceException (1)" />
+        <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="JUnit.UserServiceTest.testCreateUser_whenEmailNotificationExceptionThrow_throwsUserServiceException" />
         <item itemvalue="JUnit.UserServiceTest.testCreateUser_whenSaveMethodThrowsException_thenThrowsUserServiceException" />
-        <item itemvalue="JUnit.UserServiceTest" />
-        <item itemvalue="JUnit.UserServiceTest.testCreateUser_WhenFirstNameIsEmpty_throwsIllegalException" />
-        <item itemvalue="JUnit.UserServiceTest.testCreateUser_WhenLastNameIsEmpty_throwsIllegalException" />
       </list>
     </recent_temporary>
   </component>
@@ -181,7 +233,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730559411313</updated>
-      <workItem from="1730559412590" duration="5825000" />
+      <workItem from="1730559412590" duration="6957000" />
     </task>
     <servers />
   </component>

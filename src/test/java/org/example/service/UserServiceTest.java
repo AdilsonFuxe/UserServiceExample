@@ -5,6 +5,7 @@ import org.example.model.User;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -103,6 +104,7 @@ public class UserServiceTest {
         assertThrows(UserServiceException.class, () -> {
             userService.createUser(firstName, lastName, email, password, repeatedPassword);
         });
+        //Mockito.doNothing().when(emailVerificationService).scheduleEmailConfirmation(Mockito.any(User.class));
         Mockito.verify(emailVerificationService, Mockito.times(1)).scheduleEmailConfirmation(Mockito.any(User.class));
     }
 }
