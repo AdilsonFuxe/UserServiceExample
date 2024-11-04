@@ -5,28 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08b9c20b-4a96-4391-a758-991356a7d0ca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/data/UsersRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/data/UsersRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/EmailNotificationServiceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/EmailVerificationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/EmailVerificationServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/UserServiceException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/service/UserServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OPEN_IN_BROWSER" value="true" />
+    <option name="OUTPUT_DIRECTORY" value="C:\Users\Adilson.Fuxe\www\bancobai\java\UserService\htmlReport" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -58,7 +48,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Adilson.Fuxe/www/bancobai/java/CalculatorMavem",
+    "last_opened_file_path": "C:/Users/Adilson.Fuxe/www/bancobai/java/billis-api",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -67,6 +57,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.51839083",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -83,7 +74,22 @@
       <recent name="org.example.model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest.testCreateUser_whenEmailNotificationExceptionThrow_throwsUserServiceException (1)">
+  <component name="RunManager" selected="JUnit.UserServiceTest (1)">
+    <configuration name="UserServiceTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UserService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.service" />
+      <option name="MAIN_CLASS_NAME" value="org.example.service.UserServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UserService" />
       <extension name="coverage">
@@ -113,22 +119,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.testCreateUser_WhenFirstNameIsEmpty_throwsIllegalException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="UserService" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.service" />
-      <option name="MAIN_CLASS_NAME" value="org.example.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="testCreateUser_WhenFirstNameIsEmpty_throwsIllegalException" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserServiceTest.testCreateUser_whenEmailNotificationExceptionThrow_throwsUserServiceException (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UserService" />
       <extension name="coverage">
@@ -141,33 +131,6 @@
       <option name="MAIN_CLASS_NAME" value="org.example.service.UserServiceTest" />
       <option name="METHOD_NAME" value="testCreateUser_whenEmailNotificationExceptionThrow_throwsUserServiceException" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTest.testCreateUser_whenEmailNotificationExceptionThrow_throwsUserServiceException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="UserService" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <extension name="net.ashald.envfile">
-        <option name="IS_ENABLED" value="false" />
-        <option name="IS_SUBST" value="false" />
-        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
-        <option name="IS_IGNORE_MISSING_FILES" value="false" />
-        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
-        <ENTRIES>
-          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
-        </ENTRIES>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.service" />
-      <option name="MAIN_CLASS_NAME" value="org.example.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="testCreateUser_whenEmailNotificationExceptionThrow_throwsUserServiceException" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-Xshare:off" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -215,13 +178,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserServiceTest.testCreateUser_whenUserCreated_schedulesEmailConfirmation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UserService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.service" />
+      <option name="MAIN_CLASS_NAME" value="org.example.service.UserServiceTest" />
+      <option name="METHOD_NAME" value="testCreateUser_whenUserCreated_schedulesEmailConfirmation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserServiceTest (1)" />
+        <item itemvalue="JUnit.UserServiceTest.testCreateUser_whenUserCreated_schedulesEmailConfirmation" />
         <item itemvalue="JUnit.UserServiceTest.testCreateUser_whenEmailNotificationExceptionThrow_throwsUserServiceException (1)" />
         <item itemvalue="JUnit.UserServiceTest.testCreateUser_whenEmailNotificationExceptionThrow_throwsUserServiceException (1)" />
         <item itemvalue="JUnit.UserServiceTest" />
-        <item itemvalue="JUnit.UserServiceTest.testCreateUser_whenEmailNotificationExceptionThrow_throwsUserServiceException" />
-        <item itemvalue="JUnit.UserServiceTest.testCreateUser_whenSaveMethodThrowsException_thenThrowsUserServiceException" />
       </list>
     </recent_temporary>
   </component>
@@ -233,11 +212,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730559411313</updated>
-      <workItem from="1730559412590" duration="6957000" />
+      <workItem from="1730559412590" duration="20285000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/UserService$UserServiceTest__1_.ic" NAME="UserServiceTest (1) Coverage Results" MODIFIED="1730709905549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.example.service.*</FILTER>
+    </SUITE>
   </component>
 </project>

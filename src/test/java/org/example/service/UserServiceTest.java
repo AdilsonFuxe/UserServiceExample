@@ -5,7 +5,6 @@ import org.example.model.User;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -13,6 +12,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
+
 import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
@@ -36,6 +36,8 @@ public class UserServiceTest {
         email = "john.wick@mail.com";
         password = "12345678";
         repeatedPassword = "12345678";
+        // MockitoAnnotations.openMocks(this);
+
     }
 
     @DisplayName("User Object Created")
@@ -50,7 +52,7 @@ public class UserServiceTest {
         Mockito.verify(usersRepository, Mockito.times(1)).save(Mockito.any(User.class));
     }
 
-    @DisplayName("Empty last name causes correct exception")
+    @DisplayName("Empty first name causes correct exception")
     @Test
     void testCreateUser_WhenFirstNameIsEmpty_throwsIllegalException() {
         // Arrange
@@ -84,6 +86,15 @@ public class UserServiceTest {
         assertEquals(expectedExceptionMessage, thrown.getMessage());
     }
 
+    @DisplayName("If save() method returns false, a UserException us throw")
+    @Test
+    void testCreateUser_whenSaveMethodReturnsFalse_tneThrowsUserServiceException() {
+        Mockito.when(usersRepository.save(Mockito.any(User.class))).thenReturn(false);
+        assertThrows(UserServiceException.class, () -> {
+            userService.createUser(firstName, lastName, email, password, repeatedPassword);
+        });
+    }
+
     @DisplayName("If save() method causes RuntimeException, a UserException is thrown")
     @Test
     void testCreateUser_whenSaveMethodThrowsException_thenThrowsUserServiceException() {
@@ -107,4 +118,22 @@ public class UserServiceTest {
         //Mockito.doNothing().when(emailVerificationService).scheduleEmailConfirmation(Mockito.any(User.class));
         Mockito.verify(emailVerificationService, Mockito.times(1)).scheduleEmailConfirmation(Mockito.any(User.class));
     }
+
+//    @DisplayName("Schedule Email Confirmation is executed")
+//    @Test
+//    void testCreateUser_whenUserCreated_schedulesEmailConfirmation() {
+//        // Arrange
+//        when(usersRepository.save(any(User.class))).thenReturn(true);
+//
+//        doCallRealMethod().when(emailVerificationService)
+//            .scheduleEmailConfirmation(any(User.class));
+//
+//        // Act
+//        userService.createUser(firstName, lastName, email, password, repeatedPassword);
+//
+//        // Assert
+//        verify(emailVerificationService, times(1))
+//            .scheduleEmailConfirmation(any(User.class));
+//    }
+
 }
